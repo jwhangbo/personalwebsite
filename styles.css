@@ -1,11 +1,47 @@
+body {
+    font-family: 'Saira Condensed', sans-serif !important;
+    font-size: 21px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+li {
+    font-size: 21px;
+}
+
+.masthead-title {
+    font-size: 150px;
+}
+
+.masthead-desc {
+    font-size: 30px;
+}
+
+
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-image: url('background.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.navbar {
+    font-weight: 600;
 }
 
 .navbar-nav > li{
@@ -18,7 +54,7 @@
 }
 
 .section {
-    height: 120vh;
+    height: 100vh;
 }
 
 .contact-icon {
@@ -28,4 +64,13 @@
     border-radius: 25px;
     margin: 20px;
     padding: 15px;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-inner{
+  width:100%;
+  max-height: 600px !important;
 }

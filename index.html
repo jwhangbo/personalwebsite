@@ -7,11 +7,13 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Condensed&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="styles.css">
 
         <title>Personal Website</title>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">jwhangbo</a>
@@ -21,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">about</a>
+                            <a class="nav-link" href="#about">about</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">projects</a>
+                            <a class="nav-link" href="#projects">projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">hobbies</a>
@@ -37,26 +39,26 @@
             </div>
         </nav>
 
-        <header class="masthead">
+        <header class="masthead" id="masthead">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
-                        <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-                        <p class="lead">A great starter layout for a landing page</p>
+                        <h1 class="masthead-title">jwhangbo</h1>
+                        <p class="masthead-desc">Designer</p>
                     </div>
                 </div>
             </div>
         </header>
 
-        <section class="about section py-5">
+        <section class="about section py-5" id="about">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
-                        <h2 class="font-weight-light">About</h2>
+                        <h1 class="py-3">about</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
                     <div class="row">
-                        <div class="py-5 col-3">
-                            <h4 class="font-weight-light">Languages</h4>
+                        <div class="py-5 col-4">
+                            <h3>Languages</h3>
                             <ul class="list-unstyled">
                                 <li>Python</li>
                                 <li>GNU Bash</li>
@@ -65,8 +67,8 @@
                                 <li>R</li>
                             </ul>
                         </div>
-                        <div class="py-5 col-3">
-                            <h4 class="font-weight-light">Web Development</h4>
+                        <div class="py-5 col-4">
+                            <h3>Web Development</h3>
                             <ul class="list-unstyled">
                                 <li>HTML/CSS</li>
                                 <li>JavaScript</li>
@@ -75,8 +77,8 @@
                                 <li>React</li>
                             </ul>
                         </div>
-                        <div class="py-5 col-3">
-                            <h4 class="font-weight-light">Database Systems</h4>
+                        <div class="py-5 col-4">
+                            <h3>Database Systems</h3>
                             <ul class="list-unstyled">
                                 <li>SQLite</li>
                                 <li>MySQL</li>
@@ -85,8 +87,31 @@
                                 <li>Firebase</li>
                             </ul>
                         </div>
-                        <div class="py-5 col-3">
-                            <h4 class="font-weight-light">Operating Systems</h4>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <h3>Network</h3>
+                            <ul class="list-unstyled">
+                                <li>IPv4 & IPv6</li>
+                                <li>Switch, Bridge, Routers</li>
+                                <li>DNS Server</li>
+                                <li>Apache</li>
+                                <li>Wireshark/tcpdump</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h3>AWS</h3>
+                            <ul class="list-unstyled">
+                                <li>EC2 & S3</li>
+                                <li>VPCs</li>
+                                <li>IAM</li>
+                                <li>Elastic Beanstalk</li>
+                                <li>Load Balancer</li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h3>Operating Systems</h3>
                             <ul class="list-unstyled">
                                 <li>Windows Server</li>
                                 <li>Ubuntu</li>
@@ -102,40 +127,32 @@
             </div>
         </section>
 
-        <section class="projects section py-5">
+        <section class="projects section py-5" id="projects">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
-                        <h2 class="font-weight-light">Projects</h2>
+                        <h1 class="py-3">projects</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
                     </div>
                     <div id="demo" class="carousel slide" data-ride="carousel">
 
                           <!-- Indicators -->
                           <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
+                              <li data-target="#demo" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo" data-slide-to="1"></li>
                           </ul>
 
                           <!-- The slideshow -->
                           <div class="carousel-inner">
-                            <div class="carousel-item active">
-
-                            </div>
-                            <div class="carousel-item">
-                            </div>
-                            <div class="carousel-item">
-                            </div>
+                              <div class="carousel-item active">
+                                  <div class="card">
+                                      <div class="card-body">Basic card</div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="background2.jpeg" />
+                              </div>
                           </div>
-
-                          <!-- Left and right controls -->
-                          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                          </a>
-                          <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                          </a>
 
                         </div>
                 </div>
@@ -146,7 +163,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 text-center">
-                        <h2 class="font-weight-light">Hobbies</h2>
+                        <h1 class="py-3">hobbies</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
 
                     </div>
